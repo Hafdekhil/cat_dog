@@ -2,6 +2,20 @@
 venv/
 __pycache__/
 
+# Dataset
+cats_dogs_data/
+kagglecatsanddogs_5340.zip
+
+# Trained models
+*.keras
+*.h5
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# venv
+venv/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
