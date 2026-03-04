@@ -1,2 +1,12 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+from tensorflow import keras
+
+# 1) Charger le meilleur modèle
+model = keras.models.load_model("cats_dogs_model_Exp2_LR_0.0005.keras")
+
+# 2) Vérifier l’architecture
+model.summary()
+
+# 3) Vérifier qu’on retrouve bien ~80% sur le test
+loss, acc = model.evaluate(X_test, y_test, verbose=1)
+print("Test accuracy:", acc)
+
